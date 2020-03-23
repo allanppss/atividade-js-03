@@ -141,10 +141,38 @@ section.mosaico .conteudo1 {
   height: 60vh;
   color: #fff;
   padding: 20px;
+  position: relative;
+}
+
+section.mosaico .conteudo1 h4 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  -webkit-transform: rotate(-90deg) translateX(-10px);
+          transform: rotate(-90deg) translateX(-10px);
+}
+
+section.mosaico .conteudo1 h5 {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 section.mosaico .conteudo1 h5 span {
-  letter-spacing: -1px;
+  letter-spacing: -2px;
+  margin: 0 10px;
+}
+
+section.mosaico .conteudo1 h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+section.mosaico .conteudo1 p {
+  font-size: 12px;
+  font-weight: normal;
 }
 
 section.mosaico .f2 {
