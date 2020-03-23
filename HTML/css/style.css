@@ -1,0 +1,179 @@
+body {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-ch {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ri {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-bv {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-le {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-sp {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-sa {
+  -webkit-box-pack: last-baseline;
+      -ms-flex-pack: last-baseline;
+          justify-content: last-baseline;
+  padding-top: 50px;
+}
+
+.flex-cv {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.ico {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.barra {
+  float: left;
+  width: 100%;
+}
+
+.cover {
+  background-size: cover !important;
+}
+
+section.mosaico {
+  width: 100vw;
+}
+
+section.mosaico > div {
+  float: left;
+}
+
+section.mosaico .f1 {
+  background: url(../images/sala-verde-01.jpg) center center/cover;
+  width: 40vw;
+  height: 100vh;
+}
+
+section.mosaico .f1 h3 {
+  color: #fff;
+  -webkit-transform: rotate(90deg) translateY(30px);
+          transform: rotate(90deg) translateY(30px);
+  font-weight: 400;
+}
+
+section.mosaico .conteudo1 {
+  background: #3d523f;
+  width: 35vw;
+  height: 60vh;
+  color: #fff;
+  padding: 20px;
+}
+
+section.mosaico .conteudo1 h5 span {
+  letter-spacing: -1px;
+}
+
+section.mosaico .f2 {
+  background: url(../images/sala-verde-04.jpg) center center/cover;
+  width: 25vw;
+  height: 60vh;
+}
+
+section.mosaico .f3 {
+  background: url(../images/sala-verde-02.jpg) center center/cover;
+  width: 20vw;
+  height: 40vh;
+}
+
+section.mosaico .conteudo2 {
+  width: 20vw;
+  height: 40vh;
+  padding: 20px;
+  background: #fc9073;
+}
+
+section.mosaico .conteudo2 h5 {
+  color: #fff;
+  font-weight: 300;
+}
+
+section.mosaico .f4 {
+  width: 20vw;
+  height: 40vh;
+  background: url(../images/sala-verde-03.jpg) center center/cover;
+}
+/*# sourceMappingURL=style.css.map */
