@@ -205,3 +205,48 @@ section.mosaico {
         background: url(../images/sala-verde-03.jpg) center center / cover;
     }
 }
+
+.anima-nome {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    @include animaExpo();
+
+    &.gira1 {
+        h3 {
+            transform: rotate(0deg);
+            height: 170px;
+        }
+
+        &.gira2 {
+            h3 {
+                transform: rotate(90deg);
+                height: 100vw;
+                width: 100vw;
+            }
+
+            &.some {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    h3 {
+        color: #fff;
+        cursor: pointer;
+        background: $verde;
+        font-weight: normal;
+        width: 140px;
+        height: 40px;
+        transform: rotate(-90deg);
+        @include animaExpo();
+        transition-duration: 1200ms;
+    }
+}
