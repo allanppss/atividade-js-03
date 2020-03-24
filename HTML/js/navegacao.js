@@ -9,5 +9,9 @@ function animaNome() {
     }, 1400);
     setTimeout(function () {
         $('.mosaico >div >i').addClass('anima');
-    }, 2100);
+    }, 1600);
 }
+
+$('.hamburger').click(function () {
+    $(this).toggleClass("is-active");
+});
