@@ -122,6 +122,22 @@ section.mosaico {
 
     >div {
         float: left;
+        position: relative;
+
+        >i {
+            background: $verde;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            @include animaExpo();
+            transition-duration: 1000ms;
+
+            &.anima {
+                width: 0;
+            }
+        }
     }
 
     .f1 {
@@ -234,6 +250,14 @@ section.mosaico {
             &.some {
                 opacity: 0;
                 visibility: hidden;
+            }
+        }
+    }
+
+    &:not(.gira1) {
+        h3 {
+            &:hover {
+                background: $rosa;
             }
         }
     }
