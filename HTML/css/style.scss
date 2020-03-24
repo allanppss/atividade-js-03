@@ -19,6 +19,7 @@ body {
     color: #333;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 * {
@@ -117,8 +118,44 @@ h6 {
     background-size: cover !important;
 }
 
+aside {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: $verde;
+    z-index: 9;
+    padding: 100px 50px 50px 50px;
+    @include animaExpo();
+    transition-duration: 1000ms;
+
+    &.menu-ativo {
+        left: 0;
+    }
+
+    ul {
+        li {
+            margin-bottom: 20px;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 section.mosaico {
     width: 100vw;
+    position: relative;
+    left: 0;
+    @include animaExpo();
+    transition-duration: 1000ms;
+
+    &.menu-ativo {
+        left: 300px;
+    }
 
     >div {
         float: left;
@@ -282,6 +319,7 @@ section.mosaico {
     position: absolute;
     left: 20px;
     top: 20px;
+    z-index: 9;
 
     .hamburger-inner,
     .hamburger-inner:after,

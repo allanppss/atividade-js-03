@@ -2,6 +2,7 @@ body {
   color: #333;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -114,8 +115,46 @@ h6 {
   background-size: cover !important;
 }
 
+aside {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #3d523f;
+  z-index: 9;
+  padding: 100px 50px 50px 50px;
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+aside.menu-ativo {
+  left: 0;
+}
+
+aside ul li {
+  margin-bottom: 20px;
+}
+
+aside ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+
 section.mosaico {
   width: 100vw;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+section.mosaico.menu-ativo {
+  left: 300px;
 }
 
 section.mosaico > div {
@@ -282,6 +321,7 @@ section.mosaico .f4 {
   position: absolute;
   left: 20px;
   top: 20px;
+  z-index: 9;
 }
 
 .hamburger .hamburger-inner,

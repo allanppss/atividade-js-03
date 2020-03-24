@@ -14,4 +14,6 @@ function animaNome() {
 
 $('.hamburger').click(function () {
     $(this).toggleClass("is-active");
+    $('aside').toggleClass('menu-ativo');
+    $('.mosaico').toggleClass('menu-ativo');
 });
