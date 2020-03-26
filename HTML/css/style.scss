@@ -162,8 +162,13 @@ section.mosaico {
     width: 100vw;
     position: relative;
     left: 0;
+    opacity: 0;
     @include animaExpo();
     transition-duration: 1000ms;
+
+    &.fade {
+        opacity: 1;
+    }
 
     >i {
         position: absolute;
@@ -329,10 +334,19 @@ section.mosaico {
     height: 100vh;
     background: #fff;
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
     visibility: visible;
     z-index: 99;
     @include animaExpo();
+    transition-duration: 1000ms;
+
+    &.fade {
+        opacity: 1;
+
+        h3 {
+            top: 0;
+        }
+    }
 
     &.gira1 {
         h3 {
@@ -370,6 +384,8 @@ section.mosaico {
         font-weight: normal;
         width: 200px;
         height: 40px;
+        position: relative;
+        top: 50px;
         transform: rotate(-90deg);
         @include animaExpo();
         transition-duration: 1200ms;

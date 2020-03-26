@@ -17,3 +17,7 @@ $('.hamburger').click(function () {
     $('aside').toggleClass('menu-ativo');
     $('.mosaico').toggleClass('menu-ativo');
 });
+
+setTimeout(function () {
+    $('.mosaico, .anima-nome').addClass('fade');
+}, 500);
